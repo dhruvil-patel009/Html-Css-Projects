@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --main-bg-color: #2874f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header{
+    background-color: var(--main-bg-color);
+    height: 58px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 6vh;
+    border-radius: 5px;
+    margin: 0 20px 0 30px;
+    padding: 0 12px;
+}
+
+.search button{
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Main */
+
+.container{
+    min-height: calc(100vh - 58px - 8vh);  /* 100vh ma thi header and footer ni height subtract kari */
+}
+
+.slider{
+    margin: 12px auto;
+    width: 85vw;
+}
+
+.slider img{
+    width: 85vw;
+    height: 300px ;
+}
+
+/* cards */
+
+.card{
+    min-height: 200px;
+    border: 2px solid black;
+    display: flex;
+
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    height: 8vh;
+    font-family: 'Lato', sans-serif;
+}

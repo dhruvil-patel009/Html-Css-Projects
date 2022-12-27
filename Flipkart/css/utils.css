@@ -1,0 +1,19 @@
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 4px 12px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: blue;
+    border: 2px solid blue
+}

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) , url('../img/River\ Front.jpg');  /*linear-gradient a image ne thodi blur karva two color apva pade (but atyre rgba ma color apu 6u)*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height:15vh;
+    background-color: transparent;
+    color:white;
+    display: flex;  /* flex na use thi jode avse (same work as float(right,left)) but flex is easy to use   */
+    justify-content: space-between;  /*  bane ni jode space apse */
+    align-items: center;
+    text-transform: uppercase;  /* Capital ma leva */ 
+}
+
+nav .logo{
+    width: 25%;  /*  logo mate ni width */
+    text-align: center;  /* 25% ni center ma avse */
+}
+
+
+nav .menu{
+    width: 45%;   /* main mate ni width */
+    display: flex;  /* menu ne flex karva jethi te 0% width thi start thase */
+    justify-content: space-around; /* badha a ni farte space avse */
+}
+
+nav .menu a{
+    width: 25%; /* all a tag ni jode sarki space ave mate */
+    text-decoration: none;  /* Remove the under line */
+    font-weight: bold;
+    color: white;
+}
+
+nav .menu a:first-child{  /* nav bar na pehla a ne activate color mate first-chlid use karyu */
+    color: #00b397;
+}
+
+nav .menu a:hover{
+        color: rgb(10, 3, 68);
+        background-position: left bottom;
+        
+}
+
+
+
+  
+
+
+
+/* main area */
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(231, 139, 139);
+}
+
+
+
+section h3{
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px; /* letter ni jode 3px jeti space apse */
+    text-shadow: 1px 1px 2px black; /* first is 1px horizontal, 2 is 1px vertical , 2px nu blur and last ma color */
+}
+
+section h1{
+    margin: 30px 0 20px; /* top,right,bottom ma thi space mate*/
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black; /* first is 2px horizontal, 2 is 1px vertical , 5px nu blur and last ma color */
+    text-transform: uppercase;
+}
+
+section p {
+    font-size:25px;
+    word-spacing: 2px;   /* world ni vache space apva*/
+    margin-bottom: 25px; /* bottom ma space leva*/
+    text-shadow: 1px 1px 1px black; /* first is 1px horizontal, 2 is 1px vertical , 1px nu blur and last ma color */
+}
+
+section a{
+    padding: 12px 30px;  /*  first is top, bottom and second is left, right  */ 
+    border-radius: 4px;   /* border ne 4 a side thi adjust karva */
+    outline: none;  /* line ne remove karva */
+    text-transform: uppercase; 
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease; /* btn hover ne smooth easy karva  (ease atle easy)*/
+}
+.btnone{
+    background: #fff;
+    color: #000;
+    margin-right: 15px;
+}
+
+.btnone:hover{
+    background: #00b894;
+    color: #000;
+    margin-right: 15px;
+}
+
+.btntwo:hover{
+    background: #fff;
+    color: #000;
+    margin-right: 15px;
+}
+
+.btntwo{
+    background: #00b894;
+    color: #000;
+    margin-right: 15px;
+}
+
+.change_content:after{
+    content: ''; /* content null 6 kem ke content ma multiple value avse mate*/
+    animation: changetext 10s infinite linear;   /* change text is name of animation ,10s timing, infinite atle loop*/
+    color:#00b397;
+}
+
+@keyframes changetext{  /* name of animation*/
+    0%{
+        content:"Sabarmati Ashram";
+        color: rgb(90, 31, 31);
+    }
+   
+    20%{
+        content:"Vastrapur Lake";
+        color: brown;
+    }
+   
+    35%{
+        content:"Kankaria Zoo";
+        color: darkcyan;
+    }
+   
+    60%{
+        content:"ISKCON Temple";
+        color: lightslategrey;
+    }
+    80%{
+        content:"Pols, Ahmedabad";
+        color: chartreuse;
+    }
+    100%{
+        content:"Sidi Saiyyed";
+        color: darkgoldenrod;
+    }
+}

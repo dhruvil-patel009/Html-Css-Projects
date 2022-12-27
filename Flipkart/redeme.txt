@@ -1,0 +1,3 @@
+utils.css ma utils class add karsu ava class ke jene apde mostly use karyi
+
+px na badle width mate vw and height mate vh no use karvo te website ne responsive karva ma kam lagse
